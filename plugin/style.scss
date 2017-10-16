@@ -1,0 +1,111 @@
+body {
+  background-color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+#comment {
+  font: 10px/1.5em "BlinkMacSystemFont","Hiragino Sans GB","Microsoft YaHei","微软雅黑", "STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .comment-box {
+    margin-bottom: 5em;
+  }
+  
+  .avatar {
+    img {
+      width: 36px;
+      height: 36px;
+      vertical-align: middle;
+      border-radius: 50%;
+    }
+    font-size: 2.4em;
+    color: #157bfc;
+    display: inline-block;
+  }
+  
+  .comment-input {
+    margin-top: .5em;
+    width: 100%;
+    border-radius: .5em;
+    padding: .8em 1em;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 2em;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    font-size: 2em;
+    font-weight: 300;
+    background-color: transparent;
+    border-radius: .8em;
+    padding: .2em .8em;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background-color: #07F;
+    font-weight: normal;
+    color: #fff;
+  }
+  
+  .toolbar {
+    .btn-primary {
+      float: right;
+    }
+  }
+  
+  .comment-list {
+    .avatar {
+      color: #333;
+      font-size: 2em;
+    }
+
+    button {
+      font-size: 1.2em;
+      margin-left: 30px;
+    }
+  }
+  
+  .comment-total {
+    font-size: 2.4em;
+    text-align: center;
+  }
+
+  .post {
+    font-size: 1.5em;
+    margin: 0;
+    padding-left: 40px;
+  }
+
+  .ago {
+    margin-left: 1em;
+  }
+}
+
+
+
+
+

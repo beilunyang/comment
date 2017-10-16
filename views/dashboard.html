@@ -1,0 +1,43 @@
+{% extends './layout.html' %}
+
+{% block title %} dashboard {% endblock title %}
+
+{% block body %}
+<ul class="nav">
+  <li class="active">
+    <a href="#">控制台</a>
+  </li>
+  <li class="avatar">
+    <a href="#">
+      <img src="http://www.gravatar.com/avatar/7386a5bf1f1b67ddfe8747d912582360/?default=&s=64" alt="avatar">
+      切换账号
+    </a>
+  </li>
+</ul>
+<main class="main">
+  <h1>控制台</h1>
+  <ul>
+    <li class="new">
+      <a href="#" id="new-button">新建评论框</a>
+    </li>
+  </ul>
+</main>
+<div id="model-wrapper">
+  <form class="form model-form" action="/setting" method="POST">
+    <a href="#" id="close">
+      <img src="/images/close.svg" alt="close">
+    </a>
+    <legend>新建评论框</legend>
+    <label>
+      名称
+      <input type="text" name="name" placeholder="网站名称">
+    </label>
+    <label>
+      描述
+      <textarea rows="5" name="description" placeholder="网站描述"></textarea>
+    </label>
+    <button type="submit" class="button-primary" id="new-button">新建</button>
+  </form>
+</div>
+{% endblock body %}
+

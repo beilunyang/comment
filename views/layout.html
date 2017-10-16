@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="viewport" content="width=600">
+  <title>{% block title %}{% endblock title %}</title>
+  <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  {% block head %}
+  {% endblock head %}
+</head>
+
+<body>
+  {% block body %}
+  {% endblock body %}
+  <script src="/scripts/script.js"></script>
+</body>
+
+</html>
